@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ananta AI Labs — Fewer people. Faster. Cheaper.</title>
+<meta name="description" content="Ananta AI Labs: agents built inside Ananta's own brands. Fewer people. Faster. Cheaper.">
+<link rel="icon" href="assets/img/mark.svg">
+<link rel="stylesheet" href="assets/pitch.css">
+<script>matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.classList.add('motion')</script>
+</head>
+<body>
+<svg width="0" height="0" class="sprite" aria-hidden="true">
+  <!-- icons: lucide-static 1.72.0 (ISC) -->
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><rect x="14" y="3" width="5" height="18" rx="1"/><rect x="5" y="3" width="5" height="18" rx="1"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-cog" viewBox="0 0 24 24"><path d="M11 10.27 7 3.34"/><path d="m11 13.73-4 6.93"/><path d="M12 22v-2"/><path d="M12 2v2"/><path d="M14 12h8"/><path d="m17 20.66-1-1.73"/><path d="m17 3.34-1 1.73"/><path d="M2 12h2"/><path d="m20.66 17-1.73-1"/><path d="m20.66 7-1.73 1"/><path d="m3.34 17 1.73-1"/><path d="m3.34 7 1.73 1"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="12" r="8"/></symbol>
+  <symbol id="i-cockpit" viewBox="0 0 24 24"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></symbol>
+  <symbol id="i-catalogue" viewBox="0 0 24 24"><path d="M13 5h8"/><path d="M13 12h8"/><path d="M13 19h8"/><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/></symbol>
+  <symbol id="i-ads" viewBox="0 0 24 24"><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"/><path d="M8 6v8"/></symbol>
+  <symbol id="i-seo" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></symbol>
+  <symbol id="i-content" viewBox="0 0 24 24"><path d="m12.296 3.464 3.02 3.956"/><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3z"/><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="m6.18 5.276 3.1 3.899"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+  <symbol id="person" viewBox="0 0 32 44"><circle cx="16" cy="11" r="7"/><path d="M3 42v-6a13 13 0 0 1 26 0v6"/></symbol>
+  <symbol id="i-market" viewBox="0 0 24 24"><path d="M16 10a4 4 0 0 1-8 0"/><path d="M3.103 6.034h17.794"/><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"/></symbol>
+  <symbol id="i-tarot" viewBox="0 0 24 24"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></symbol>
+  <symbol id="i-love" viewBox="0 0 24 24"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></symbol>
+  <symbol id="i-muhurat" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+</svg>
+
+<div id="track">
+<div id="stage">
+<div id="canvas">
+  <header class="masthead">
+    <div class="brand"><span class="mark-slot head" data-mark-head><img src="assets/img/mark.svg" alt=""></span><h1>Ananta AI Labs</h1></div>
+    <nav class="pager" aria-label="Sections">
+      <button type="button" class="ico" data-step="-1" aria-label="Previous section"><svg><use href="#i-prev"/></svg></button>
+      <p class="now" aria-live="polite"><span id="now-n">01</span><span class="of"> / 13</span> <span id="now-name">Hook</span></p>
+      <button type="button" class="ico" data-step="1" aria-label="Next section"><svg><use href="#i-next"/></svg></button>
+    </nav>
+    <i id="progress" aria-hidden="true"></i>
+  </header>
+
+  <div id="frame" aria-hidden="true"></div>
+  <img id="mark" src="assets/img/mark.svg" alt="" aria-hidden="true">
+
+  <main>
+  <!-- b01 hook · F2 F4 -->
+  <section class="beat" id="b01" data-name="Hook" aria-labelledby="b01-h">
+    <div class="copy">
+      <h2 id="b01-h" class="hero swap">
+        <span class="m"><span class="a">Five to ten people, and days.</span></span>
+        <span class="m"><span class="b">One agent. In a day.</span></span>
+      </h2>
+      <figure class="people">
+        <div class="m"><div class="crowd" aria-hidden="true"><svg class="person"><use href="#person"/></svg><svg class="person"><use href="#person"/></svg><svg class="person"><use href="#person"/></svg><svg class="person"><use href="#person"/></svg><svg class="person"><use href="#person"/></svg><svg class="person"><use href="#person"/></svg><svg class="person"><use href="#person"/></svg><svg class="person"><use href="#person"/></svg><svg class="person"><use href="#person"/></svg><svg class="person"><use href="#person"/></svg></div></div>
+        <figcaption class="m"><span>5–10 people · days</span></figcaption>
+      </figure>
+      <div class="m"><div class="count">
+        <data class="num" value="1996" data-from="1011">1,996</data>
+        <p class="count-label">grouped listings<br>6 Oct 2026 · one day</p>
+      </div></div>
+    </div>
+    <div class="slot" data-frame>
+      <div class="in term">
+        <div class="tbar"><i></i><i></i><i></i><time class="clock" data-from="13:57">20:32</time></div>
+        <ol class="lines">
+          <li class="c">$ fk-seller groups --account ak</li>
+          <li><i></i><span>grouped listings</span><span>1,011</span></li>
+          <li class="c t">$ fk-seller group-batch families.json</li>
+          <li class="t"><b>✓</b><span>13:00  grouped</span><span>+2</span></li>
+          <li class="t minor"><b>✓</b><span>15:00  grouped</span><span>+16</span></li>
+          <li class="t minor"><b>✓</b><span>16:00  grouped</span><span>+39</span></li>
+          <li class="t minor"><b>✓</b><span>17:00  grouped</span><span>+59</span></li>
+          <li class="t minor"><b>✓</b><span>18:00  grouped</span><span>+34</span></li>
+          <li class="t"><b>✓</b><span>19:00  grouped</span><span>+667</span></li>
+          <li class="t"><b>✓</b><span>20:00  grouped</span><span>+143</span></li>
+          <li class="t"><b>✓</b><span>20:32  consolidations</span><span>7/7</span></li>
+          <li class="c t">$ fk-seller groups --account ak</li>
+          <li class="t"><i></i><span>grouped listings</span><b>1,996</b></li>
+        </ol>
+      </div>
+    </div>
+    <div class="vo-row"><button type="button" class="vo-btn" data-vo="b01"><svg><use href="#i-play"/></svg><span>Play voice-over</span></button></div>
+    <p class="hint" aria-hidden="true"><span><svg><use href="#i-down"/></svg>Scroll to begin</span></p>
+    <p class="sr" id="b01-vo">Grouping a Flipkart catalogue — variations, size, colour, attributes — used to take five to ten people, and days. On the sixth of October, one agent took a Rubans account from one thousand and eleven grouped listings to nearly two thousand. In a day.</p>
+  </section>
+
+  <!-- b02 shift · F28 F5 F1 F4 F8 -->
+  <section class="beat" id="b02" data-name="Shift" aria-labelledby="b02-h">
+    <div class="copy">
+      <h2 id="b02-h"><span class="m"><span>Growth costs <em class="u">headcount<i></i></em>.</span></span></h2>
+      <p class="lede m"><span>Every brand grows the same way: more people, more agencies, more spend.</span></p>
+      <ul class="dash">
+        <li class="m"><span>People watching ads through the night.</span></li>
+        <li class="m"><span>People fixing listings by hand.</span></li>
+        <li class="m"><span>Weeks to publish one blog.</span></li>
+      </ul>
+    </div>
+    <div class="slot short" data-frame>
+      <div class="in sheet ledger">
+        <dl>
+          <div class="row"><dt>People</dt><dd><i class="bar" style="--w:.72"></i></dd></div>
+          <div class="row"><dt>Agencies</dt><dd><i class="bar" style="--w:.84"></i></dd></div>
+          <div class="row"><dt>Ad spend</dt><dd><i class="bar" style="--w:.96"></i></dd></div>
+          <div class="row margin"><dt>Margin</dt><dd><i class="bar" style="--w:.14"></i></dd></div>
+        </dl>
+      </div>
+    </div>
+    <div class="vo-row"><button type="button" class="vo-btn" data-vo="b02"><svg><use href="#i-play"/></svg><span>Play voice-over</span></button></div>
+    <p class="sr" id="b02-vo">Every brand grows the same way: more people, more agencies, more spend. People watching ads through the night. People fixing listings by hand. Weeks to publish one blog. Growth costs headcount.</p>
+  </section>
+
+  <!-- b03 turn · F18 F11 -->
+  <section class="beat" id="b03" data-name="Turn" aria-labelledby="b03-h">
+    <div class="turn">
+      <h2 id="b03-h">
+        <span class="m"><span>18 months. 16 hours a day.</span></span>
+        <span class="m"><span><em>Agents</em>, inside Ananta's own brands.</span></span>
+      </h2>
+      <i class="wire"></i>
+      <div class="slot glyph" data-frame><div class="in"><svg><use href="#i-cog"/></svg></div></div>
+    </div>
+    <div class="vo-row"><button type="button" class="vo-btn" data-vo="b03"><svg><use href="#i-play"/></svg><span>Play voice-over</span></button></div>
+    <p class="sr" id="b03-vo">For eighteen months, sixteen hours a day, I've been replacing that work with agents. Inside Ananta's own brands.</p>
+  </section>
+
+  <!-- b04 catalogue · F1 F3 -->
+  <section class="beat" id="b04" data-name="Catalogue" aria-labelledby="b04-h">
+    <div class="copy">
+      <h2 id="b04-h"><span class="m"><span>The catalogue agent finds why listings are hidden and fixes them.</span></span></h2>
+      <div class="m"><div class="count">
+        <data class="num" value="500" data-from="0">500</data>
+        <p class="count-label">hidden listings diagnosed<br>9 minutes</p>
+      </div></div>
+    </div>
+    <div class="slot short" data-frame>
+      <div class="in term">
+        <div class="tbar"><i></i><i></i><i></i><time class="clock" data-from="0:00">9:00</time></div>
+        <ol class="lines">
+          <li class="c">$ fk-seller qc --hidden --account ak</li>
+          <li class="t"><i></i><span>hidden listings</span><span>500</span></li>
+          <li class="t"><b>✓</b><span>rule 44 · pack-of ≠ photo</span><span>206</span></li>
+          <li class="t"><b>✓</b><span>rule 225 · sales package ≠ photo</span><span>231</span></li>
+          <li class="t"><b>✓</b><span>rule 646 · attribute ≠ image</span><span>39</span></li>
+          <li class="t"><b>✓</b><span>rule 4 · colour ≠ image</span><span>41</span></li>
+          <li class="t"><b>✓</b><span>diagnosed</span><b>500/500</b></li>
+        </ol>
+      </div>
+    </div>
+    <div class="vo-row"><button type="button" class="vo-btn" data-vo="b04"><svg><use href="#i-play"/></svg><span>Play voice-over</span></button></div>
+    <p class="sr" id="b04-vo">The catalogue agent finds why listings are hidden and fixes them. Five hundred diagnosed in nine minutes.</p>
+  </section>
+
+  <!-- b05 ads · F5 · night of 6→7 Oct 2026 from ppc_order (results.json Q3) -->
+  <section class="beat" id="b05" data-name="Ads" aria-labelledby="b05-h">
+    <div class="copy">
+      <h2 id="b05-h"><span class="m"><span>The ads agent checks every campaign every fifteen minutes.</span></span></h2>
+      <p class="lede m"><span>No sale after a hundred clicks, it pauses. It refills from keywords that already sell, and scales what returns eight times.</span></p>
+      <p class="say m"><span>Nobody watches it at night.</span></p>
+    </div>
+    <div class="slot" data-frame>
+      <div class="in term">
+        <div class="tbar"><i></i><i></i><i></i><time class="clock" data-from="23:45">05:20</time></div>
+        <ol class="lines">
+          <li class="c">$ flipkart-ppc · Fonte · 6→7 Oct 2026</li>
+          <li class="t"><i></i><span>23:45–53  keyword adds refused</span><span>15</span></li>
+          <li class="t"><b>✓</b><span>23:57  keywords added</span><span>10</span></li>
+          <li class="t"><b>✓</b><span>04:40  bids raised</span><span>9</span></li>
+          <li class="t"><b>✓</b><span>05:10  paused · out of stock</span><span>3</span></li>
+          <li class="t"><b>✓</b><span>05:10  paused · 100 clicks, 0 sales</span><span>2</span></li>
+          <li class="t"><b>✓</b><span>05:14  bids raised</span><span>6</span></li>
+          <li class="t"><b>✓</b><span>05:20  bids raised</span><span>1</span></li>
+        </ol>
+        <div class="night" aria-hidden="true">
+          <svg viewBox="0 0 1000 24" preserveAspectRatio="none"><path class="ticks" pathLength="1" d="M0.0 4v16 M44.8 4v16 M89.6 4v16 M134.3 4v16 M179.1 4v16 M223.9 4v16 M268.7 4v16 M313.4 4v16 M358.2 4v16 M403.0 4v16 M447.8 4v16 M492.5 4v16 M537.3 4v16 M582.1 4v16 M626.9 4v16 M671.6 4v16 M716.4 4v16 M761.2 4v16 M806.0 4v16 M850.7 4v16 M895.5 4v16 M940.3 4v16 M985.1 4v16"/></svg>
+          <i class="ev no" style="left:0%;width:2.39%"></i><i class="ev" style="left:3.58%"></i><i class="ev" style="left:88.06%"></i><i class="ev" style="left:97.01%"></i><i class="ev" style="left:98.21%"></i><i class="ev" style="left:100%"></i>
+          <span class="t0">23:45</span><span class="t1">05:20</span>
+        </div>
+      </div>
+    </div>
+    <div class="vo-row"><button type="button" class="vo-btn" data-vo="b05"><svg><use href="#i-play"/></svg><span>Play voice-over</span></button></div>
+    <p class="sr" id="b05-vo">The ads agent checks every campaign every fifteen minutes. No sale after a hundred clicks, it pauses. It refills from keywords that already sell, and scales what returns eight times. Nobody watches it at night.</p>
+  </section>
+
+  <!-- b06 ads proof · F6 (Q4 recompute: 231 / 956) -->
+  <section class="beat" id="b06" data-name="Ads proof" aria-labelledby="b06-h">
+    <div class="copy">
+      <h2 id="b06-h"><span class="m"><span>Products we advertised grew sales seventy-seven percent in a month.</span></span></h2>
+      <p class="say m"><span>The ones we didn't, fell five.</span></p>
+    </div>
+    <div class="slot short" data-frame>
+      <figure class="in sheet diverge" style="--min:-5;--max:76.6">
+        <div class="row"><span class="lbl">Advertised (231)</span><data class="val red" value="76.6">+76.6%</data><span class="track"><i class="bar pos red" style="--v:76.6"></i></span></div>
+        <div class="row"><span class="lbl">Not advertised (956)</span><data class="val" value="-5">−5.0%</data><span class="track"><i class="bar neg" style="--v:-5"></i></span></div>
+        <figcaption class="foot">Fonte, Flipkart · sales per day · 9 Aug–7 Sep vs 8 Sep–5 Oct 2026</figcaption>
+      </figure>
+    </div>
+    <div class="vo-row"><button type="button" class="vo-btn" data-vo="b06"><svg><use href="#i-play"/></svg><span>Play voice-over</span></button></div>
+    <p class="sr" id="b06-vo">Products we advertised grew sales seventy-seven percent in a month. The ones we didn't, fell five.</p>
+  </section>
+
+  <!-- b07 seo · F8 (S3 fallback: real article, generation_history id 3) -->
+  <section class="beat" id="b07" data-name="SEO" aria-labelledby="b07-h">
+    <div class="copy">
+      <h2 id="b07-h"><span class="m"><span>Five agents research, plan, write, optimise and humanise an AEO-ready blog.</span></span></h2>
+      <ol class="agents">
+        <li class="m"><span><svg><use href="#i-check"/></svg>SERP Spy</span></li>
+        <li class="m"><span><svg><use href="#i-check"/></svg>Brand Strategist</span></li>
+        <li class="m"><span><svg><use href="#i-check"/></svg>Drafter</span></li>
+        <li class="m"><span><svg><use href="#i-check"/></svg>SEO Architect</span></li>
+        <li class="m"><span><svg><use href="#i-check"/></svg>Humanizer</span></li>
+      </ol>
+      <p class="say m"><span>It used to take weeks. It takes five minutes.</span></p>
+    </div>
+    <div class="slot" data-frame>
+      <div class="in web">
+        <div class="wbar"><i></i><i></i><i></i><span class="addr">Generated 28 May 2026</span><time class="clock" data-from="0:00">5:00</time></div>
+        <div class="view"><img class="article" src="assets/img/s3-lede.webp" width="992" height="1040" alt="The generated article: Foam vs Spring Mattress, Which One Actually Suits Your Sleep Style?" decoding="async"></div>
+      </div>
+    </div>
+    <div class="vo-row"><button type="button" class="vo-btn" data-vo="b07"><svg><use href="#i-play"/></svg><span>Play voice-over</span></button></div>
+    <p class="sr" id="b07-vo">Five agents research, plan, write, optimise and humanise an AEO-ready blog. It used to take weeks. It takes five minutes.</p>
+  </section>
+
+  <!-- b08 results · F13 F14 F4 (chart rule failed → bars fallback) -->
+  <section class="beat" id="b08" data-name="Results" aria-labelledby="b08-h">
+    <div class="copy">
+      <h2 id="b08-h" class="stack">
+        <span class="m"><span>Fewer people.</span></span>
+        <span class="m"><span>Faster.</span></span>
+        <span class="m"><span>Cheaper.</span></span>
+      </h2>
+      <p class="say m"><span>Rubans: highest share of voice ever</span></p>
+    </div>
+    <div class="slot short" data-frame>
+      <figure class="in sheet hbars" style="--max:15">
+        <figcaption class="cap">Marketing cost % of sales</figcaption>
+        <div class="row"><span class="lbl">Category average</span><span class="track"><i class="bar" style="--v:15"></i></span><span class="val">15%</span></div>
+        <div class="row"><span class="lbl">SleepyCat</span><span class="track"><i class="bar red" style="--v:7.5"></i></span><span class="val red">7–8%</span></div>
+      </figure>
+    </div>
+    <div class="vo-row"><button type="button" class="vo-btn" data-vo="b08"><svg><use href="#i-play"/></svg><span>Play voice-over</span></button></div>
+    <p class="sr" id="b08-vo">Where it runs: share of voice at its highest, marketing cost falling — at SleepyCat from fifteen percent of sales to seven or eight. Fewer people. Faster. Cheaper. At the same time.</p>
+  </section>
+
+  <!-- b09 team · F15 F16 F17 (S7 web fallback: Play Store listing, focal) -->
+  <section class="beat" id="b09" data-name="Team" aria-labelledby="b09-h">
+    <div class="copy">
+      <h2 id="b09-h"><span class="m"><span>I didn't do it alone.</span></span></h2>
+      <ul class="team">
+        <li class="m"><span><span class="face" aria-hidden="true">A</span><b>Aman</b></span></li>
+        <li class="m"><span><span class="face" aria-hidden="true">R</span><b>Rahul</b><span class="role">a chartered accountant who runs his own business</span></span></li>
+        <li class="m"><span><span class="face" aria-hidden="true">R</span><b>Raghu</b><span class="role">a full-stack engineer in Bangalore</span></span></li>
+      </ul>
+      <p class="years m"><span><i></i><span>Friends for 20 years</span></span></p>
+      <p class="lede m"><span>I lead Ananta AI Labs with this team: powering Ananta Capital's existing brands today, and setting up R&amp;D for what comes next.</span></p>
+    </div>
+    <div class="vis">
+      <div class="slot web-short" data-frame>
+        <div class="in web">
+          <div class="wbar"><i></i><i></i><i></i><span class="addr">play.google.com</span></div>
+          <div class="view"><img src="assets/img/s7-playstore.webp" width="1360" height="780" alt="NAMO: Connecting भारत, listed on Google Play" decoding="async">
+            <span class="callout" style="left:0.9%;top:12.8%;width:52.7%;height:12.8%"><span>Live on the Play Store</span></span></div>
+        </div>
+      </div>
+      <figure class="hbars small" style="--max:6">
+        <div class="row m"><span class="lbl">Abzzo</span><span class="track"><i class="bar" style="--v:6"></i></span><span class="val">6 months</span></div>
+        <div class="row m"><span class="lbl">NAMO</span><span class="track"><i class="bar red" style="--v:2"></i></span><span class="val red">2 months</span></div>
+        <figcaption class="say m"><span>Our first product took six months. NAMO took two. It's live.</span></figcaption>
+      </figure>
+    </div>
+    <div class="vo-row"><button type="button" class="vo-btn" data-vo="b09"><svg><use href="#i-play"/></svg><span>Play voice-over</span></button></div>
+    <p class="sr" id="b09-vo">I didn't do it alone. Rahul, a chartered accountant who runs his own business. Raghu, a full-stack engineer in Bangalore. Friends for twenty years. Our first product took six months. NAMO took two. It's live. I lead Ananta AI Labs with this team: powering Ananta Capital's existing brands today, and setting up R&amp;D for what comes next. NAMO is a by-product of that work and that team.</p>
+  </section>
+
+  <!-- b10 labs · F11 F19 F20 F27: two pages (engine, then products: S8 Gita 1.1 render, S5 Rubans app) -->
+  <section class="beat two" id="b10" data-name="Labs" aria-labelledby="b10-h">
+    <div class="page pa">
+      <div class="copy">
+        <h2 id="b10-h"><span class="m"><span>Ananta AI Labs makes this the group's engine.</span></span></h2>
+        <p class="lede m"><span>Every Ananta brand gets these agents, calibrated, not rebuilt.</span></p>
+      </div>
+      <div class="engine">
+        <svg viewBox="0 0 400 400" aria-hidden="true"><g class="roads"><path pathLength="1" d="M200 144V60"/><path pathLength="1" d="M253.3 182.7 333.1 156.7"/><path pathLength="1" d="M232.9 245.3 282.3 313.3"/><path pathLength="1" d="M167.1 245.3 117.7 313.3"/><path pathLength="1" d="M146.7 182.7 66.9 156.7"/></g></svg>
+        <div class="slot disc" data-frame><span class="mark-slot" data-mark><img src="assets/img/mark.svg" alt=""></span></div>
+        <ul class="nodes">
+          <li class="n" style="--x:50%;--y:9%"><span><svg><use href="#i-cockpit"/></svg>Cockpit</span></li>
+          <li class="n" style="--x:88%;--y:37.6%"><span><svg><use href="#i-catalogue"/></svg>Catalogue</span></li>
+          <li class="n" style="--x:73.5%;--y:84%"><span><svg><use href="#i-ads"/></svg>Ads</span></li>
+          <li class="n" style="--x:26.5%;--y:84%"><span><svg><use href="#i-seo"/></svg>SEO</span></li>
+          <li class="n" style="--x:12%;--y:37.6%"><span><svg><use href="#i-content"/></svg>Content</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="page pb">
+      <div class="copy">
+        <p class="lede m"><span>And Labs builds its own products. NAMO is the first —</span></p>
+        <p class="figure m"><span><b>₹2,500 cr+</b><span class="count-label">run rate · Astrotalk, 2026</span></span></p>
+      </div>
+      <figure class="reel">
+        <div class="slot wide" data-frame><div class="in video"><video src="assets/video/s8-gita.mp4" poster="assets/img/s8-gita.webp" controls muted loop playsinline preload="none" aria-label="NAMO Studio render, Gita 1.1"></video></div></div>
+        <figcaption class="m"><span>NAMO Studio</span></figcaption>
+      </figure>
+      <figure class="phone"><div class="m"><span class="screen"><img src="assets/img/s5-app.webp" width="540" height="1170" alt="Rubans app: the Bestsellers rail with product names and prices" decoding="async"></span></div><figcaption class="m"><span>Rubans app</span></figcaption><div class="loupe m"><span><img src="assets/img/s5-card.webp" width="544" height="150" alt="Maroon Coloured Potli Handbag With Silver Embroidery And Pearls, ₹1,299" decoding="async"></span></div></figure>
+    </div>
+    <!-- page C · F29: 34 live features (namoApp inventory); tiles = real app assets where they exist -->
+    <div class="page pc">
+      <div class="copy">
+        <p class="tag m"><span>Pre-revenue</span></p>
+        <p class="say m"><span>NAMO is already a super app.</span></p>
+        <div class="m"><div class="count">
+          <data class="num" value="34" data-from="0">34</data>
+          <p class="count-label">live features<br>in one app</p>
+        </div></div>
+      </div>
+      <div class="apps">
+        <div class="slot namo" data-frame><div class="in"><img src="assets/img/namo/namo-logo.webp" width="632" height="176" alt="NAMO"></div></div>
+        <ul class="grid12">
+          <li><span class="tile"><img src="assets/img/namo/bhakti.webp" width="320" height="320" alt=""></span><span>Bhakti</span></li>
+          <li><span class="tile"><img src="assets/img/namo/darshan.webp" width="320" height="320" alt=""></span><span>Darshan</span></li>
+          <li><span class="tile"><img src="assets/img/namo/status.webp" width="320" height="320" alt=""></span><span>WA Status</span></li>
+          <li><span class="tile"><img src="assets/img/namo/tv.webp" width="320" height="320" alt=""></span><span>NAMO TV</span></li>
+          <li><span class="tile"><img src="assets/img/namo/consult.webp" width="320" height="320" alt=""></span><span>Consult</span></li>
+          <li><span class="tile glyph-t"><svg><use href="#i-market"/></svg></span><span>Market</span></li>
+          <li><span class="tile"><img src="assets/img/namo/tribes.webp" width="320" height="320" alt=""></span><span>Tribes</span></li>
+          <li><span class="tile"><img src="assets/img/namo/horoscope.webp" width="320" height="320" alt=""></span><span>Horoscope</span></li>
+          <li><span class="tile glyph-t"><svg><use href="#i-tarot"/></svg></span><span>Tarot</span></li>
+          <li><span class="tile glyph-t"><svg><use href="#i-love"/></svg></span><span>Love Match</span></li>
+          <li><span class="tile glyph-t"><svg><use href="#i-muhurat"/></svg></span><span>Muhurat</span></li>
+          <li><span class="tile"><img src="assets/img/namo/panchang.webp" width="320" height="320" alt=""></span><span>Panchang</span></li>
+        </ul>
+        <i class="slot dot" data-frame></i>
+      </div>
+    </div>
+    <div class="vo-row"><button type="button" class="vo-btn" data-vo="b10"><svg><use href="#i-play"/></svg><span>Play voice-over</span></button></div>
+    <p class="sr" id="b10-vo">Ananta AI Labs makes this the group's engine. Every Ananta brand gets these agents, calibrated, not rebuilt. And Labs builds its own products. NAMO is the first — in a market where one astrology app already earns over two thousand five hundred crore a year. NAMO is already a super app: thirty-four live features in one, from live darshan and WhatsApp status to community, a marketplace, astrology and NAMO TV.</p>
+  </section>
+
+  <!-- b10v vision · owner-stated vision (SCRIPT §Vision), no numbers on screen; ep01 v2 shots A2 B2x D1 E1x -->
+  <section class="beat" id="b10v" data-name="Vision" aria-labelledby="b10v-h">
+    <div class="copy">
+      <h2 id="b10v-h" class="stack">
+        <span class="m"><span>Generated end to end.</span></span>
+        <span class="m later"><span>Forward-deployed agents.</span></span>
+        <span class="m later"><span>Now we <em>double</em> down.</span></span>
+      </h2>
+    </div>
+    <div class="deploy">
+      <div class="slot reel9" data-frame><div class="in video"><video src="assets/video/ep01-shots.mp4" poster="assets/img/ep01-poster.webp" controls muted loop playsinline preload="none" aria-label="NAMO Studio, Mahabharata episode 1: four generated shots, with sound"></video></div></div>
+      <ul class="tiles">
+        <li class="m later"><span>Rubans</span></li>
+        <li class="m later"><span>SleepyCat</span></li>
+      </ul>
+      <ul class="agents-fly" aria-hidden="true">
+        <li><svg><use href="#i-cockpit"/></svg></li><li><svg><use href="#i-catalogue"/></svg></li><li><svg><use href="#i-ads"/></svg></li><li><svg><use href="#i-seo"/></svg></li><li><svg><use href="#i-content"/></svg></li>
+        <li><svg><use href="#i-cockpit"/></svg></li><li><svg><use href="#i-catalogue"/></svg></li><li><svg><use href="#i-ads"/></svg></li><li><svg><use href="#i-seo"/></svg></li><li><svg><use href="#i-content"/></svg></li>
+      </ul>
+    </div>
+    <div class="vo-row"><button type="button" class="vo-btn" data-vo="b10v"><svg><use href="#i-play"/></svg><span>Play voice-over</span></button></div>
+    <p class="sr" id="b10v-vo">This is what Labs is already making: a Mahabharata series where every frame, every voice and every sound is generated end to end. Next come forward-deployed agents, living inside each brand's real operations. Rubans and SleepyCat were the small tests. They worked. Now we double down.</p>
+  </section>
+
+  <!-- b11 ask · F21 F22 (Q2 default footer) -->
+  <section class="beat" id="b11" data-name="Ask" aria-labelledby="b11-h">
+    <div class="copy">
+      <h2 id="b11-h" class="ask-h"><span class="m"><span><b>₹10 cr</b><span class="sep"> · </span>2 years · people, technology, marketing</span></span></h2>
+      <p class="foot m"><span>Equity terms as in my message of 3 Nov</span></p>
+    </div>
+    <div class="slot" data-frame>
+      <ol class="in sheet ladder" style="--max:5">
+        <li class="ask" style="--v:2"><span class="step"><span class="amt">₹2 cr</span><span class="col"><svg aria-label="asked now" role="img"><use href="#i-check"/></svg></span></span><span class="when">now · NAMO growth + content factory</span></li>
+        <li class="locked" style="--v:3"><span class="step"><span class="amt">₹3 cr</span><span class="col"><svg aria-label="locked until the milestone" role="img"><use href="#i-lock"/></svg></span></span><span class="when">at ₹1 cr+ NAMO monthly revenue</span></li>
+        <li class="locked" style="--v:5"><span class="step"><span class="amt">₹5 cr</span><span class="col"><svg aria-label="locked until year 2" role="img"><use href="#i-lock"/></svg></span></span><span class="when">year 2</span></li>
+      </ol>
+    </div>
+    <div class="vo-row"><button type="button" class="vo-btn" data-vo="b11"><svg><use href="#i-play"/></svg><span>Play voice-over</span></button></div>
+    <p class="sr" id="b11-vo">Two crore now, for NAMO's growth and the content factory. NAMO is pre-revenue; this funds its validation. Three crore when NAMO reaches one crore a month in revenue. Five in year two.</p>
+  </section>
+
+  <!-- b12 close · F11 -->
+  <section class="beat" id="b12" data-name="Close" aria-labelledby="b12-h">
+    <div class="engine lit">
+      <svg viewBox="0 0 400 400" aria-hidden="true"><g class="roads"><path pathLength="1" d="M200 144V60"/><path pathLength="1" d="M253.3 182.7 333.1 156.7"/><path pathLength="1" d="M232.9 245.3 282.3 313.3"/><path pathLength="1" d="M167.1 245.3 117.7 313.3"/><path pathLength="1" d="M146.7 182.7 66.9 156.7"/></g><g class="ends"><circle cx="200" cy="52" r="6"/><circle cx="340.7" cy="154.2" r="6"/><circle cx="287" cy="319.8" r="6"/><circle cx="113" cy="319.8" r="6"/><circle cx="59.3" cy="154.2" r="6"/></g></svg>
+      <div class="slot dot" data-frame></div>
+      <span class="mark-slot" data-mark><img src="assets/img/mark.svg" alt=""></span>
+    </div>
+    <div class="close">
+      <h2 id="b12-h"><span class="m"><span>Rubans proved the engine.</span></span></h2>
+      <div class="thesis">
+        <p class="say m"><span>One engine: agents that run brands</span></p>
+        <p class="lede m"><span>proven inside Ananta's companies, now powering NAMO, our own product</span></p>
+      </div>
+      <p class="m"><span><img class="wordmark" src="assets/img/wordmark.svg" width="2700" height="1196" alt="Ananta"></span></p>
+    </div>
+    <div class="vo-row"><button type="button" class="vo-btn" data-vo="b12"><svg><use href="#i-play"/></svg><span>Play voice-over</span></button></div>
+    <p class="sr" id="b12-vo">Rubans proved the engine. One engine: agents that run brands — proven inside Ananta's companies, now powering NAMO, our own product.</p>
+  </section>
+  </main>
+
+  <p id="caption" hidden></p>
+</div>
+</div>
+</div>
+<audio id="vo" preload="none"></audio>
+<script src="assets/js/gsap.min.js" defer></script>
+<script src="assets/js/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/Flip.min.js" defer></script>
+<script src="assets/pitch.js" defer></script>
+</body>
+</html>
