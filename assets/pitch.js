@@ -23,7 +23,7 @@
   $$('.vo-btn').forEach(b => b.addEventListener('click', () => {
     if (on === b) return stopVO();
     stopVO(); on = b; setBtn(b, true);
-    audio.src = `assets/vo/${b.dataset.vo}.mp3?v=1112a`;
+    audio.src = `assets/vo/${b.dataset.vo}.mp3?v=1112b`;
     audio.play().catch(stopVO);
     cap.textContent = $(`#${b.dataset.vo}-vo`).textContent; cap.hidden = false;
   }));
