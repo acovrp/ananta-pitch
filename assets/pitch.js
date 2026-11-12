@@ -23,7 +23,7 @@
   $$('.vo-btn').forEach(b => b.addEventListener('click', () => {
     if (on === b) return stopVO();
     stopVO(); on = b; setBtn(b, true);
-    audio.src = `assets/vo/${b.dataset.vo}.mp3?v=47ee1c7`;
+    audio.src = `assets/vo/${b.dataset.vo}.mp3?v=1112a`;
     audio.play().catch(stopVO);
     cap.textContent = $(`#${b.dataset.vo}-vo`).textContent; cap.hidden = false;
   }));
@@ -162,7 +162,6 @@
     },
     b09(tl, s, t) {
       tl.fromTo($$('.face', s), { scale: 0 }, { scale: 1, duration: .4, stagger: .12, ease: 'back.out(1.7)' }, t - .5)
-        .fromTo($('.years i', s), { scaleX: 0 }, { scaleX: 1, duration: .6 }, t - .1)
         .fromTo($$('.hbars .bar', s), { scaleX: 0 }, { scaleX: 1, duration: .8, stagger: .2 }, t + .3);
       callout(tl, $('.callout', s), t + .9);
       return t + 1.5;

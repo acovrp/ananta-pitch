@@ -198,16 +198,14 @@ html:not(.motion) .slot>.in{inset:0;border:2px solid var(--rule);border-radius:v
 .face{display:grid;place-items:center;width:96px;height:96px;margin-bottom:10px;border:3px solid var(--ink);border-radius:50%;font:500 44px/1 var(--serif)}
 .team b{font-size:34px}
 .role{font-size:28px;line-height:1.35;color:var(--ink-2)}
-.years{width:100%}
-.years>span{display:flex;align-items:center;gap:20px;font-size:var(--aux);color:var(--ink-2)}
-.years i{flex:1;height:3px;background:var(--red);transform-origin:left}
 .vis{display:flex;flex-direction:column;gap:28px;min-width:0}
 .slot.web-short{height:524px}
 #b09 .slot.web-short{height:580px}
-.products{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:16px 24px 44px}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:16px 20px 44px}
 .products figure{min-height:0;display:grid;grid-template-rows:minmax(0,1fr) auto;gap:12px;text-align:center}
 .products figure img{height:100%;width:100%;object-fit:contain;filter:none}
-.products figcaption{font-size:23px;font-weight:600;color:var(--ink-2)}
+.products figcaption{font-size:23px;font-weight:600;color:var(--ink-2);line-height:1.3}
+.products figcaption b{display:block;font-size:30px}
 .products .callout{left:24px;right:24px;bottom:8px;height:auto;border:0}
 .products .callout span{position:static;display:block;margin:0;text-align:center;padding:0;background:transparent;color:var(--red);font-size:24px}
 
@@ -273,6 +271,7 @@ html:not(.motion) .slot.namo{display:none}
 .col svg{width:44px;height:44px;stroke-width:3}
 .locked .col svg{stroke-width:2.2}
 .when{font-size:30px;line-height:1.4;color:var(--ink-2)}
+.when b{display:block;font-weight:600}
 
 /* close */
 #b12{grid-template-columns:var(--copy) var(--vis)}
@@ -287,10 +286,10 @@ html:not(.motion) .slot.namo{display:none}
 
 /* turn */
 #b03{grid-template-columns:minmax(0,1fr)}
-.turn{display:grid;grid-template-columns:auto minmax(60px,1fr) 128px;grid-template-rows:auto auto;column-gap:40px;align-items:center}
-.turn h2{grid-column:1/4;grid-row:1/3;display:grid;grid-template-columns:subgrid;grid-template-rows:subgrid;font-size:var(--hero);line-height:1.1}
+.turn{display:grid;grid-template-columns:auto minmax(60px,1fr) 128px;grid-template-rows:auto auto auto;column-gap:40px;align-items:center}
+.turn h2{grid-column:1/4;grid-row:1/4;display:grid;grid-template-columns:subgrid;grid-template-rows:subgrid;font-size:var(--hero);line-height:1.1}
 .turn h2 .m:first-child{grid-column:1}
-.turn h2 .m:last-child{grid-column:1/4}
+.turn h2 .m:not(:first-child){grid-column:1/4}
 .wire{grid-column:2;grid-row:1;height:3px;background:var(--ink);transform-origin:left}
 .slot.glyph{grid-column:3;grid-row:1;width:128px;height:128px;border-radius:28px}
 .glyph .in{display:grid;place-items:center;color:var(--red);border-radius:26px}
@@ -372,17 +371,20 @@ html:not(.motion) .reel9>.in{border-radius:40px}
   .vis{gap:48px}
   .slot.web-short{height:640px;flex:none}
   #b09 .slot.web-short{height:980px}
-  .products{gap:24px;padding:20px 24px 72px}
-  .products figcaption{font-size:36px}
+  .products{gap:20px;padding:20px 20px 72px}
+  .products figcaption{font-size:34px}
+  .products figcaption b{font-size:42px}
   .products .callout span{font-size:38px}
   .callout span{font-size:44px}
   .hbars.small{row-gap:28px}
   .hbars.small .track{height:48px}
   .hbars.small .val{font-size:80px}
   #b07 .slot{height:1240px}
-  #b11 .slot{height:820px}   /* the ask fits the stage: "₹10 cr" never pans away */
+  #b11 .slot{height:860px}   /* the ask fits the stage: "₹10 cr" never pans away */
+  #b11 .copy{gap:24px}
+  #b11 .lede,#b11 .foot{font-size:44px}
   .ask-h>.m>span{font-size:var(--say);line-height:1.2}
-  .ladder .when{font-size:44px}
+  .ladder .when{font-size:40px;line-height:1.3}
   .engine{width:900px;justify-self:center}
   .pa .engine{order:-1}
   .nodes li>span{font-size:50px;gap:14px}
@@ -414,10 +416,11 @@ html:not(.motion) .reel9>.in{border-radius:40px}
   .col svg{width:64px;height:64px}
   .wordmark{width:360px}
   #b03{align-content:center}
-  .turn{grid-template-columns:minmax(0,1fr) 128px;grid-template-rows:auto auto auto;row-gap:24px}
-  .turn h2{grid-column:1/3;grid-row:1/4;grid-template-rows:subgrid;text-wrap:pretty}
+  .turn{grid-template-columns:minmax(0,1fr) 128px;grid-template-rows:auto auto auto auto;row-gap:24px}
+  .turn h2{grid-column:1/3;grid-row:1/5;grid-template-rows:subgrid;text-wrap:pretty}
   .turn h2 .m:first-child{grid-column:1/3;grid-row:1}
-  .turn h2 .m:last-child{grid-column:1/3;grid-row:3}
+  .turn h2 .m:nth-child(2){grid-column:1/3;grid-row:3}
+  .turn h2 .m:nth-child(3){grid-column:1/3;grid-row:4}
   .wire{grid-column:1;grid-row:2}
   .slot.glyph{grid-column:2;grid-row:2}
   #b12{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto;align-content:center;justify-items:center;row-gap:48px}
