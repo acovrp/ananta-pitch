@@ -161,7 +161,7 @@ html:not(.motion) .slot>.in{inset:0;border:2px solid var(--rule);border-radius:v
 .ledger dt{font:500 48px/1.2 var(--serif)}
 .ledger .bar{display:block;width:calc(var(--w) * 100%);height:22px;border-radius:4px;background:var(--grey);transform-origin:left}
 .ledger .margin dt{color:var(--red)}
-.ledger .margin .bar{height:9px;background:var(--red)}
+.ledger .margin .bar{background:var(--red)}   /* same thickness as the cost rows: only its length (the data) shrinks */
 
 /* bar charts */
 .bar{transform-origin:left}
@@ -203,6 +203,13 @@ html:not(.motion) .slot>.in{inset:0;border:2px solid var(--rule);border-radius:v
 .years i{flex:1;height:3px;background:var(--red);transform-origin:left}
 .vis{display:flex;flex-direction:column;gap:28px;min-width:0}
 .slot.web-short{height:524px}
+#b09 .slot.web-short{height:580px}
+.products{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:16px 24px 44px}
+.products figure{min-height:0;display:grid;grid-template-rows:minmax(0,1fr) auto;gap:12px;text-align:center}
+.products figure img{height:100%;width:100%;object-fit:contain;filter:none}
+.products figcaption{font-size:23px;font-weight:600;color:var(--ink-2)}
+.products .callout{left:24px;right:24px;bottom:8px;height:auto;border:0}
+.products .callout span{position:static;display:block;margin:0;text-align:center;padding:0;background:transparent;color:var(--red);font-size:24px}
 
 /* engine: mark + five roads */
 .engine{position:relative;aspect-ratio:1;width:800px;justify-self:center}
@@ -320,6 +327,7 @@ html:not(.motion) .reel9>.in{border-radius:40px}
   .copy{gap:40px}
   .slot{height:1180px}
   .slot.short{height:900px}
+  #b08 .slot.short{height:1120px}
   /* opaque footer band: panning content passes under it, the voice-over button sits on it */
   .motion .beat::after{content:'';position:absolute;z-index:1;left:0;right:0;bottom:0;height:var(--padb);background:var(--paper)}
   .vo-row,.hint{z-index:2}
@@ -363,6 +371,10 @@ html:not(.motion) .reel9>.in{border-radius:40px}
   .role{font-size:var(--aux)}
   .vis{gap:48px}
   .slot.web-short{height:640px;flex:none}
+  #b09 .slot.web-short{height:980px}
+  .products{gap:24px;padding:20px 24px 72px}
+  .products figcaption{font-size:36px}
+  .products .callout span{font-size:38px}
   .callout span{font-size:44px}
   .hbars.small{row-gap:28px}
   .hbars.small .track{height:48px}
@@ -380,7 +392,7 @@ html:not(.motion) .reel9>.in{border-radius:40px}
   .reel figcaption,.phone figcaption{font-size:var(--aux)}
   .phone{display:contents;--ph:540px}
   .phone>.m:first-child{grid-area:phone}
-  .phone>figcaption.m{grid-area:pcap;justify-self:center;margin:0}
+  .phone>figcaption.m{grid-area:pcap;justify-self:center;margin:0;max-width:calc(var(--ph) * 9 / 19.5 + 20px);text-align:center}
   .phone>.loupe.m{grid-area:loupe;position:static;width:auto}
   .slot.namo{width:420px;height:250px;margin:-125px 0 0 -210px}
   .pc{grid-template-rows:auto minmax(0,1fr);align-content:stretch}

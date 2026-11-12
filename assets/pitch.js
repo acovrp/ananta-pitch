@@ -123,7 +123,7 @@
     },
     b02(tl, s, t) {
       tl.fromTo($$('.row:not(.margin) .bar', s), { scaleX: .35 }, { scaleX: 1, duration: 1, stagger: .12, ease: 'power2.inOut' }, t - .2)
-        .fromTo($('.margin .bar', s), { scaleX: 4.3, scaleY: 2.4 }, { scaleX: 1, scaleY: 1, duration: 1.1, ease: 'power2.inOut' }, t - .1)
+        .fromTo($('.margin .bar', s), { scaleX: 4.3, scaleY: 1, transformOrigin: 'left center' }, { scaleX: 1, scaleY: 1, duration: 1.1, ease: 'power2.inOut' }, t - .1)
         .fromTo($('.u i', s), { scaleX: 0 }, { scaleX: 1, duration: .5 }, t + .7);
       return t + 1.3;
     },
