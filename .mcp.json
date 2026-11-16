@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "startup-valuation": {
+      "command": "python3",
+      "args": ["-m", "startup_valuation.mcp.server"]
+    }
+  }
+}

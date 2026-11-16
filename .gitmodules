@@ -1,0 +1,15 @@
+[submodule "tools/startup-valuation"]
+	path = tools/startup-valuation
+	url = https://github.com/simonmak-ascent/startup-valuation.git
+[submodule "tools/Startup-Valuation-Studio"]
+	path = tools/Startup-Valuation-Studio
+	url = https://github.com/worldmohammad/Startup-Valuation-Studio-.git
+[submodule "tools/startup-skill"]
+	path = tools/startup-skill
+	url = https://github.com/ferdinandobons/startup-skill.git
+[submodule "tools/idea-validation-agents"]
+	path = tools/idea-validation-agents
+	url = https://github.com/MaxKmet/idea-validation-agents.git
+[submodule "tools/VettIQ"]
+	path = tools/VettIQ
+	url = https://github.com/Nirikshan95/VettIQ.git
